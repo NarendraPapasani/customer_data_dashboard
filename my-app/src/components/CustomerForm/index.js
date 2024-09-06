@@ -125,7 +125,7 @@ class CustomerForm extends React.Component {
     const { formData, errors, showSuccess, countries, trueResponse } =
       this.state;
     return (
-      <div className="w-2/4 mr-3">
+      <div className="w-2/4 mr-5">
         <h1 className="font-mono text-2xl mb-3 text-center mt-3">
           Add New Customer Detail Here....
         </h1>

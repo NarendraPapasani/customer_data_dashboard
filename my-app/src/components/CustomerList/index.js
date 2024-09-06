@@ -1,11 +1,10 @@
 import axios from "axios";
 import React from "react";
-import { Component } from "react";
-import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { withRouter } from "react-router-dom";
 import ListItem from "../ListItem";
 import Navbar from "../Navbar";
 
-class CustomerList extends Component {
+class CustomerList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -72,7 +71,6 @@ class CustomerList extends Component {
 
   render() {
     const { customers, searchTerm } = this.state;
-    console.log(customers);
     return (
       <div className="m-5 w-screen">
         <div className="border-solid rounded-md border-gray-700 p-4 border-2">

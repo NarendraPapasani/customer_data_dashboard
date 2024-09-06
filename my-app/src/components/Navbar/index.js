@@ -23,12 +23,6 @@ const Navbar = () => {
                 >
                   Customer List
                 </Link>
-                <Link
-                  to="/"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out"
-                >
-                  Update Details
-                </Link>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
 import axios from "axios";
-import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 class EditForm extends React.Component {
   constructor(props) {
     super(props);
@@ -149,7 +149,7 @@ class EditForm extends React.Component {
     } = this.state;
     return (
       <div className="">
-        <h1 className="font-mono text-2xl mb-3 text-center mt-3">
+        <h1 className="font-mono text-2xl mb-3 text-center">
           Update Customer Detail Here....
         </h1>
         <div className="flex justify-center items-center h-max mt-8 overflow-y-auto max-h-100">
@@ -387,6 +387,12 @@ class EditForm extends React.Component {
                   >
                     Save
                   </button>
+                  <Link
+                    to="/"
+                    className="inline-block align-baseline font-bold text-sm text-black-500 hover:text-black-800"
+                  >
+                    Cancel
+                  </Link>
                 </div>
               )}
             </form>
